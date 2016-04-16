@@ -4,7 +4,8 @@ python:
 install:
   - pip install pex
 script:
-  - pex -o pyshop.pex -r requirements.txt -m -vvv
+  - ls -al
+  - pex -o pyshop.pex -r requirements.txt -m -vvvvv
 deploy:
   provider: releases
   api_key:
