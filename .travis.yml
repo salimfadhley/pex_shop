@@ -1,8 +1,10 @@
 language: python
 python:
-- '2.7'
-install: ls -al
-script: "./build_pex.sh"
+  - '2.7'
+install:
+  - pip install pex
+script:
+  - pex -o build/pypiserver.pex -r requirements.txt -m -vvv
 deploy:
   provider: releases
   api_key:
