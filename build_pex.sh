@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-./venv/bin/pex -o build/pypiserver.pex -r requirements.txt -m "pypiserver.__main__:main" -vvv
+pip install pex
+pex -o build/pypiserver.pex -r requirements.txt -m -vvv
 

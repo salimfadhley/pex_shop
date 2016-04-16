@@ -1,12 +1,12 @@
 language: python
-
 python:
-    - "2.7"
-
-# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install:
-    ls -al
-
-# command to run tests, e.g. python setup.py test
-script:
-    ./build_pex.sh
+- '2.7'
+install: ls -al
+script: "./build_pex.sh"
+deploy:
+  provider: releases
+  api_key:
+    secure: JyVglNdjokXJpcH460ImdolFrX1tCPDDUpJl+3ublkIFrnayHrvElsoyX38CiiiuMZ2XBjjdLJXFRrTOfVl3/kcuojy29vzUoINFKKJhKuhSCUUf0q+dhhZt9fknkAmiadEQV87MXrgrNtxgNECs0ZugFSCT0qytq/9IEkwRV6rp5e7BWc6wmCFCku1CrKeFpnZXk5LlhJElD+sYC55D3gJNm3UoEFE/SjDvZVyFPMmIKpiXI/9ylCAVXuGpGeIECSO3AUVZPuv66Be5vFvmmYpKZlZvDnwRdQwEO4G2oYQM484Gl0GK8jbD7kM+bd2oK+5EVBvgC0YkfWGYfPU/1bCTX44b5PyqtDVOCt7Mj5cN2Qi+Hw3f0/lvTHcoijjmLxA6kgG+k/TyLjMDFK3PBpXi38HcPG6wJ7B9LFOtsmaImK/wZgkNwNNGj5hr9+5gpFwOB2Y0jL3EqyngDOvDChOMMrfqhkt11TqRfUO9IgucP8jj/S45kwOzCJtkF9sIkoJKA7pK5dB218quE80HzF5sxoqCZnQcb0KfIw3lPGBUMPoPLNMDyxyMXVkyjEgKiHSJA9mru9TDKH3t2i+3vw6hNI8VyN2onrYVm4GoekVuLbBiY8SUXrf0h9UCG/Qhm6w0W5TUvTZB6eUvWpvgAiGIobwvavgCxRKVQX35wxU=
+  file: build/*.pex
+  on:
+    repo: salimfadhley/pyshop_pex
