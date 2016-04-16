@@ -71,3 +71,4 @@ target/
 # Created by .ignore support plugin (hsz.mobi)
 venv
 .idea/workspace.xml
+*.pex
