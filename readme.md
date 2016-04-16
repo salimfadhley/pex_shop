@@ -1,4 +1,5 @@
-== PyShop as a Pex ==
+PyShop as a Pex
+===============
 
 [PyShop](https://pypi.python.org/pypi/pyshop) is an excellent PyPi mirror designed for use behind firewalls, however since it requires a number of dependencies
 to get up and running it may be difficult to install it.
@@ -10,4 +11,5 @@ in order to make all of the PyShop services accessible from the command line.
 
 Compiled Pex files can be downloaded from the project's [Releases Page](https://github.com/salimfadhley/pyshop_pex/releases).
 
-If you have any questions about this project:
+If you have any questions about this project: salimfadhley@gmail.com
+
