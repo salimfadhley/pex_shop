@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-pip install requests
-pip install pex
+pip install requests pex --upgrade
 mkdir -p ./build
 rm -rf ./build/*
